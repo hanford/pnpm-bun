@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    // https://emotion.sh/docs/typescript#css-prop
+    "jsxImportSource": "@emotion/react",
+    "baseUrl": ".",
+    "paths": {
+      // Also modify jest.config when changing these!
+      "modules/*": ["src/modules/*"],
+      // "utils/*": ["src/utils/*"],
+      "components/*": ["src/components/*"]
+      // "hooks/*": ["src/hooks/*"],
+      // "hocs/*": ["src/hocs/*"],
+      // "mutations/*": ["src/mutations/*"],
+      // "relay/*": ["src/relay/*"],
+      // "dazzle-types/*": ["dazzle-types/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next.config.js",
+    "test/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
